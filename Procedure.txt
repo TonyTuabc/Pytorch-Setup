@@ -2,3 +2,11 @@ First: Install Anaconda
 Second: Open Anaconda Prompt, Input: conda create -n pytorchenv python=3.9
 Third: conda activate pytorchenv
 Finally: conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+
+Use it in Jupyter Notebook
+# 第一步，切换到想要添加的虚拟环境：
+conda activate pytorchenv
+# 第二步，安装ipykernel包
+conda install ipykernel
+# 第三步，执行如下命令，并确定环境的名称（此处设置为data）
+python -m ipykernel install --name pytorchenv
